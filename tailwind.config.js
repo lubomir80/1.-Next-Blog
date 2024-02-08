@@ -20,10 +20,8 @@ module.exports = {
             'desktop-md': '1536px',
          },
          colors: {
-            "bg-white": "#ffff",
-            "bg-Soft": "#f0f0f0",
-            "textColor": "#111111",
-            "textColorSoft": "#626262",
+            "darkBg": "#0f172a",
+            "darkText": "#ddd"
          },
          maxWidth: {
             "1366": "1366px",
@@ -35,4 +33,5 @@ module.exports = {
       },
    },
    plugins: [],
+   darkMode: "class"
 }
