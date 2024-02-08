@@ -6,6 +6,9 @@ import { ThemeContext } from "../context/ThemeContext"
 const ThemeProvider = ({ children }) => {
    const { theme } = useContext(ThemeContext)
 
+
+
+
    return (
       <div className={theme}>
          {children}
