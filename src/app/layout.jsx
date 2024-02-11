@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
                <ThemeProvider>
                   <div className='
                   min-h-[100vh] mx-auto bg-white text-black
-                  dark:bg-darkBg dark:text-darkText'>
+                  dark:bg-darkBg dc'>
                      <div className='
                         mx-auto 
                         desktop-md:max-w-1366
