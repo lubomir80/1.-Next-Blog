@@ -19,7 +19,7 @@ function Navbar() {
          desktop:text-4xl
          
          
-         '>myblog</div>
+         '>Myblog</div>
          <nav className='flex-1 flex items-center gap-6 text-lg justify-end 
          desktop:text-xl desktop:gap-3.5 dark:text-white'>
             <ThemeToggle />
