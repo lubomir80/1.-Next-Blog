@@ -2,7 +2,9 @@ import React from 'react'
 
 function Menu() {
    return (
-      <div>Menu</div>
+      <div className='basis-1/6'>
+         Menu
+      </div>
    )
 }
 
