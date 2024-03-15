@@ -1,6 +1,6 @@
 import React from 'react'
 import Pagination from './Pagination'
-import Post from './Post'
+import Post from './Post/Post'
 
 function CardList() {
    return (

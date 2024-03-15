@@ -1,7 +1,7 @@
 import CardList from "./components/CardList";
-import CategoryList from "./components/CategoryList";
+import CategoryList from "./components/Category/CategoryList";
 import Featured from "./components/Featured";
-import Menu from "./components/Menu";
+import Menu from "./components/Menu/Menu";
 
 
 
