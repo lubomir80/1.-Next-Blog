@@ -1,26 +1,26 @@
 const categories = [
    {
-      color: "bg-blue-200",
+      link: "/",
       name: "style",
    },
    {
-      color: "bg-red-200",
+      link: "/",
       name: "culture",
    },
    {
-      color: "bg-orange-200",
+      link: "/",
       name: "travel",
    },
    {
-      color: "bg-amber-200",
+      link: "/",
       name: "coding",
    },
    {
-      color: "bg-lime-200",
+      link: "/",
       name: "food",
    },
    {
-      color: "bg-green-200",
+      link: "/",
       name: "fashion",
    },
 ]

@@ -10,8 +10,8 @@ function CategoryList() {
                <h2 className='my-10 font-bold text-2xl'>Popular Categoies</h2>
                <div className='flex items-center justify-between gap-5 flex-wrap'>
                   {
-                     categories.map(({ color, name }) =>
-                        <CategoryItem key={name} name={name} color={color} />
+                     categories.map(({ name }) =>
+                        <CategoryItem key={name} name={name} />
                      )
                   }
                </div>

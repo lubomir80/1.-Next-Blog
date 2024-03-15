@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import pickBgColor from "../../helpers/PickBgColors"
 
 function PostItem({ image }) {
    return (
@@ -11,7 +12,7 @@ function PostItem({ image }) {
             </div>
          )}
          <div className='basis-4/5 flex flex-col gap-1.5 '>
-            <span className='rounded-md px-2 py-1 bg-orange-200 w-max text-white tracking-wider'>Travel</span>
+            <span className={`${pickBgColor("travel")} rounded-md px-2 py-1  w-max text-white tracking-wider`}>Travel</span>
             <h3 className='font-bold text-sm dark:text-slate-200 '>
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolorum illum non</h3>
             <div>

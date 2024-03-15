@@ -9,8 +9,8 @@ function CategoryMenuList() {
          {categories && (
             <PostsContainer title="Categories" subtitle="Discover by topic">
                <div className='flex flex-wrap gap-4'>
-                  {categories.map(({ color, name }) =>
-                     <CategoryItem key={name} name={name} color={color} small={true} />
+                  {categories.map(({ name }) =>
+                     <CategoryItem key={name} name={name} small={true} />
                   )}
                </div>
             </PostsContainer>
