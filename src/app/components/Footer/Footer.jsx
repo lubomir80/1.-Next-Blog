@@ -1,6 +1,6 @@
 import React from 'react'
-import SocialMedia from './SocialMedia'
-import FooterLinksTable from './Footer/FooterLinksTable'
+import SocialMedia from '../SocialMedia'
+import FooterLinksTable from './FooterLinksTable'
 
 function Footer() {
    return (
