@@ -4,7 +4,7 @@ import Post from './Post/Post'
 
 function CardList() {
    return (
-      <div className='basis-4/6'>
+      <div className='flex-basis laptop:basis-4/6'>
          <h2 className='font-bold text-2xl my-12'>
             Recent Posts
          </h2>
