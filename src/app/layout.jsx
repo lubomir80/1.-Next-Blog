@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import { ThemeContextProvider } from './context/ThemeContext'
 import './globals.css'
