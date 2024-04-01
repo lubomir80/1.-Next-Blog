@@ -1,18 +1,13 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import AuthLinks from './AuthLinks'
 import ThemeToggle from './ThemeToggle'
+import SocialMedia from './SocialMedia'
 
 function Navbar() {
    return (
       <header className='flex items-center justify-between h-[100px]'>
-         <div className='hidden laptop:flex flex-1 gap-2'>
-            <Image src="/facebook.png" alt='facebook' width={24} height={24} />
-            <Image src="/instagram.png" alt='instagram' width={24} height={24} />
-            <Image src="/tiktok.png" alt='tiktok' width={24} height={24} />
-            <Image src="/youtube.png" alt='youtube' width={24} height={24} />
-         </div>
+         <SocialMedia className='hidden laptop:flex flex-1 gap-2' iconSize={24} />
          <div className='
          flex-1 font-bold text-left text-2xl dark:text-white
          laptop:text-3xl laptop:text-center

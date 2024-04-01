@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import SocialMedia from './SocialMedia'
 
 function Footer() {
    return (
@@ -13,12 +13,7 @@ function Footer() {
             <p>
                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis quam et esse sapiente rerum at suscipit magni? Totam unde nam expedita alias autem nisi minus aspernatur rem reiciendis! Soluta, accusamus.
             </p>
-            <div className='flex items-center gap-2'>
-               <Image src="/facebook.png" alt='' width={18} height={18} />
-               <Image src="/instagram.png" alt='' width={18} height={18} />
-               <Image src="/tiktok.png" alt='' width={18} height={18} />
-               <Image src="/youtube.png" alt='' width={18} height={18} />
-            </div>
+            <SocialMedia className="flex items-center gap-2" iconSize={18} />
          </div>
          <div className='basis-1/2 flex justify-end gap-16'>
             <ul className='flex flex-col gap-2'>
