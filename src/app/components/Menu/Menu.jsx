@@ -6,7 +6,7 @@ import EditorPickMenuList from './EditorPickMenuList'
 
 function Menu() {
    return (
-      <div className='basis-2/6 mt-10 '>
+      <div className='hidden basis-2/6 mt-10 laptop:block'>
          <MostPopularMenuList />
          <CategoryMenuList />
          <EditorPickMenuList />
