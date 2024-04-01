@@ -4,7 +4,7 @@ import Link from 'next/link'
 function Post() {
    return (
       <div className='flex gap-10 items-center  '>
-         <div className='hidden desktop:block  flex-1 h-[350px] relative bg-white'>
+         <div className='flex-1 h-[350px] relative bg-white'>
             <Image className='object-cover' src="/p1.jpeg" alt="" fill />
          </div>
          <div className='flex-1 flex flex-col gap-5'>
