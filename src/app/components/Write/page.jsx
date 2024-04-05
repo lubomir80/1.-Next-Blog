@@ -2,7 +2,11 @@ import React from 'react'
 
 function WritePage() {
    return (
-      <div>WritePage</div>
+      <div>
+         <div>
+            install react-quill
+         </div>
+      </div>
    )
 }
 
