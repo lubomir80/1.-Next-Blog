@@ -18,6 +18,7 @@ function Navbar() {
             <ThemeToggle />
             <Link className='hidden phone:block ' href="/">Homepage</Link>
             <Link className='hidden phone:block ' href="/">Contact</Link>
+            <Link className='hidden phone:block ' href="/write">Write</Link>
             <Link className='hidden phone:block ' href="/">About</Link>
             <AuthLinks />
          </nav>
