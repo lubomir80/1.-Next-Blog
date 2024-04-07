@@ -1,12 +1,11 @@
 "use client"
 import Image from 'next/image';
-import Button from "./Button"
 import React, { useState } from 'react'
 import dynamic from "next/dynamic";
-const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
-
 import 'react-quill/dist/quill.snow.css';
+import Button from './Button';
 
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 function WritePage() {
    const [open, setOpen] = useState(false);
