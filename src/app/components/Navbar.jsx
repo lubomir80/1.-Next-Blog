@@ -13,8 +13,8 @@ function Navbar() {
          laptop:text-3xl laptop:text-center
          desktop:text-4xl
          '>Myblog</div>
-         <nav className='flex-1 flex items-center gap-6 text-lg justify-end 
-         desktop:text-xl desktop:gap-3.5 dark:text-white'>
+         <nav className='flex-1 flex items-center gap-3 text-lg justify-end 
+         desktop:text-xl desktop:gap-3.5 '>
             <ThemeToggle />
             <Link className='hidden phone:block ' href="/">Homepage</Link>
             <Link className='hidden phone:block ' href="/">Contact</Link>
