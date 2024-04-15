@@ -4,10 +4,16 @@ import Link from 'next/link'
 import React, { useEffect } from 'react'
 import BurgerBtn from './BurgerBtn';
 import { useToggle } from '../hooks/useToggle';
+import { signOut, useSession } from 'next-auth/react';
 
 function AuthLinks() {
-   const status = "notauthenticated"
+   // const status = "notauthenticated"
    const { isOpen, toggle } = useToggle()
+   const { data, status } = useSession()
+
+   console.log(status)
+
+
 
    useEffect(() => {
       isOpen ? (document.body.style.overflow = 'hidden') :
@@ -16,12 +22,12 @@ function AuthLinks() {
 
    return (
       <>
-         {status === "notauthenticated" ? (
+         {status === "unauthenticated" ? (
             <Link className='hidden phone:block' href="/login">Login</Link>
          ) : (
             <>
                <Link className='hidden phone:block' href="/write">Write</Link>
-               <span className='cursor-pointer flex-col justify-between'>
+               <span onClick={signOut} className='cursor-pointer flex-col justify-between'>
                   Logout
                </span>
             </>
@@ -39,12 +45,12 @@ function AuthLinks() {
                <Link href="/">Contact</Link>
                <Link href="/">About</Link>
 
-               {status === "notauthenticated" ? (
+               {status === "unauthenticated" ? (
                   <Link href="/login">Login</Link>
                ) : (
                   <>
                      <Link href="/write">Write</Link>
-                     <span className='cursor-pointer flex-col justify-between '>
+                     <span onClick={signOut} className='cursor-pointer flex-col justify-between '>
                         Logout
                      </span>
                   </>

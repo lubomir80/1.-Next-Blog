@@ -5,6 +5,7 @@ import { ThemeContextProvider } from './context/ThemeContext'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import ThemeProvider from './provider/ThemeProvider'
+import AuthProvider from './provider/AuthProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,12 +20,13 @@ export default function RootLayout({ children }) {
    return (
       <html lang="en">
          <body className={inter.className}>
-            <ThemeContextProvider>
-               <ThemeProvider>
-                  <div className='
+            <AuthProvider>
+               <ThemeContextProvider>
+                  <ThemeProvider>
+                     <div className='
                   min-h-[100vh] mx-auto bg-white text-black
                   dark:bg-darkBg dark:text-white'>
-                     <div className='
+                        <div className='
                         mx-auto 
                         desktop-md:max-w-1366
                         desktop:max-w-1024
@@ -32,14 +34,15 @@ export default function RootLayout({ children }) {
                         laptop:max-w-768
                         tablet:max-w-640
                         max-w-475 px-10'>
-                        <Navbar />
-                        {children}
-                        <Footer />
+                           <Navbar />
+                           {children}
+                           <Footer />
+                        </div>
                      </div>
-                  </div>
-               </ThemeProvider>
-            </ThemeContextProvider>
+                  </ThemeProvider>
+               </ThemeContextProvider>
+            </AuthProvider>
          </body>
-      </html>
+      </html >
    )
 }
