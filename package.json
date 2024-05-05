@@ -1,28 +1,29 @@
 {
-  "name": "next-blog",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@auth/prisma-adapter": "^2.0.0",
-    "@prisma/client": "^5.13.0",
-    "autoprefixer": "10.4.17",
-    "eslint": "8.56.0",
-    "eslint-config-next": "14.1.0",
-    "next": "14.1.0",
-    "next-auth": "^4.24.7",
-    "postcss": "8.4.35",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-quill": "^2.0.0",
-    "tailwindcss": "3.4.1"
-  },
-  "devDependencies": {
-    "prisma": "^5.13.0"
-  }
+   "name": "next-blog",
+   "version": "0.1.0",
+   "private": true,
+   "scripts": {
+      "dev": "next dev",
+      "build": "prisma generate && next build",
+      "start": "next start",
+      "lint": "next lint",
+      "postinstall": "prisma generate"
+   },
+   "dependencies": {
+      "@auth/prisma-adapter": "^2.0.0",
+      "@prisma/client": "^5.13.0",
+      "autoprefixer": "10.4.17",
+      "eslint": "8.56.0",
+      "eslint-config-next": "14.1.0",
+      "next": "14.1.0",
+      "next-auth": "^4.24.7",
+      "postcss": "8.4.35",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "react-quill": "^2.0.0",
+      "tailwindcss": "3.4.1"
+   },
+   "devDependencies": {
+      "prisma": "^5.13.0"
+   }
 }
