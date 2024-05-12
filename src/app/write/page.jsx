@@ -1,6 +1,8 @@
 "use client"
 import Image from 'next/image';
 import React, { useState } from 'react'
+import { useSession } from 'next-auth/react'
+import { useRouter } from 'next/navigation'
 import dynamic from "next/dynamic";
 import 'react-quill/dist/quill.snow.css';
 import AddButton from '../components/AddButton';
@@ -11,6 +13,17 @@ const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 function WritePage() {
    const [open, setOpen] = useState(false);
    const [value, setValue] = useState(false);
+
+   const { data, status } = useSession()
+   const router = useRouter()
+
+   if (status === "loading") {
+      return <div>Loading...</div>
+   }
+   if (status === "authenticated") {
+      router.push("/")
+   }
+
 
    return (
       <div className='relative'>
