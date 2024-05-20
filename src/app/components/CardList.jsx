@@ -17,6 +17,7 @@ const getData = async (page) => {
 
 const CardList = async () => {
    const posts = await getData()
+   console.log(process.env.NEXTAUTH_URL + `/api/posts`);
 
 
    return (
