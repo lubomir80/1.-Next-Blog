@@ -11,8 +11,6 @@ function AuthLinks() {
    const { isOpen, toggle } = useToggle()
    const { data, status } = useSession()
 
-   console.log(status)
-
 
 
    useEffect(() => {

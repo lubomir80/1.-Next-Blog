@@ -2,7 +2,24 @@ import React from 'react'
 import CategoryItem from './CategoryItem'
 import categories from './data'
 
-function CategoryList() {
+const getData = async (page) => {
+   const res = await fetch(`http://localhost:3000/api/categories`, {
+      cache: "no-store"
+   })
+
+   if (!res.ok) {
+      throw new Error("Fetch data failed")
+   }
+   return res.json()
+}
+
+
+
+
+const CategoryList = async () => {
+   const categ = await getData()
+
+
    return (
       <>
          {categories && (

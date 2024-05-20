@@ -3,7 +3,23 @@ import PostsContainer from '../Post/PostsContainer'
 import CategoryItem from './CategoryItem'
 import categories from "./data"
 
-function CategoryMenuList() {
+const getData = async (page) => {
+   const res = await fetch(`http://localhost:3000/api/categories`, {
+      cache: "no-store"
+   })
+
+   if (!res.ok) {
+      throw new Error("Fetch data failed")
+   }
+   return res.json()
+}
+
+
+
+const CategoryMenuList = async () => {
+   const categ = await getData()
+
+
    return (
       <>
          {categories && (
