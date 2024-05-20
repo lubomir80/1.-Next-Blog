@@ -3,7 +3,7 @@ import Pagination from './Pagination'
 import Post from './Post/Post'
 
 const getData = async (page) => {
-   const res = await fetch(`http://1-next-blog-git-route-lubomir80s-projects.vercel.app/api/posts`, {
+   const res = await fetch(`http://localhost:3000/api/posts`, {
       cache: "no-store"
    })
 

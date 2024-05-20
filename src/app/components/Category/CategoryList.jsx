@@ -3,7 +3,7 @@ import CategoryItem from './CategoryItem'
 import categories from './data'
 
 const getData = async (page) => {
-   const res = await fetch(`http://1-next-blog-git-route-lubomir80s-projects.vercel.app/api/categories`, {
+   const res = await fetch(`http://localhost:3000/api/categories`, {
       cache: "no-store"
    })
 
